@@ -1,5 +1,7 @@
 {
   "name": "Tiebari",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
