@@ -17,17 +17,18 @@
 <!-- <ion-button (click)="vibrate()" slot="end">
     <p>Vibreur</p>
   </ion-button> -->
-  <h3 class="mv">MODE DE VIBRATION</h3>
-  <ion-button class="test" (click)="vibrate1()"> Vibrer 1s </ion-button>
-  <ion-button (click)="vibrate2()"> Vibrer 3s</ion-button>
-  <ion-button (click)="vibrate3()"> Vibrer 5s</ion-button>
+  <ion-label class="new" color="light" position="stacked">MODE DE VIBRATION</ion-label>
+  <ion-button (click)="vibrate1()" expand="block" fill="outline" color="light" > Vibrer 1s </ion-button>
+  <ion-button (click)="vibrate2()" expand="block" fill="outline" color="light"> Vibrer 3s</ion-button>
+  <ion-button (click)="vibrate3()" expand="block" fill="outline" color="light"> Vibrer 5s</ion-button>
   <h3 class="btS">STATUS BATTERIE</h3>
   <div class="pourcentage">{{btlvl}} %</div>
   <div class="brancher">{{btsat}}</div>
 
-  <ion-button class="btbuttons" (click)="CheckBatStatus()"> Voir </ion-button>
-  <ion-button  (click)="stpBatCheck()"> Stop </ion-button>
-
+  <ion-list lines="full" inset="false">
+  <ion-button  (click)="CheckBatStatus()" expand="block" fill="outline" color="light"> Voir </ion-button>
+  <ion-button  (click)="stpBatCheck()" expand="block" fill="outline" color="light"> Stop </ion-button>
+  </ion-list>
   <div class="scroll-box">
     <div class="movie">
     </div>
